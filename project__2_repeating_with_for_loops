@@ -1,0 +1,30 @@
+//
+// project__2_repeating_with_for_loops
+//
+
+
+int d=100; // sets a default delay time, 1000 milliseconds (one second)
+void setup()
+{
+    for (int a = 2; a<=7; a++) // blink from LEDs 2 to 6
+{
+    pinMode(a,OUTPUT); // SET PIN-OUTPUT *PIN OUT 2
+  
+
+  }
+}
+void loop()
+{
+    for (int a = 2; a<=7; a++) // blink from LEDs 2 to 7
+    {
+    digitalWrite(a, HIGH);
+    delay(d);
+    digitalWrite(a, LOW);
+  }
+  for (int a=5; a>=3; a--) // blink from LEDs 5 to 3
+  {
+    digitalWrite(a, HIGH);
+    delay(d);
+    digitalWrite(a, LOW);
+  }
+}
